@@ -12,7 +12,7 @@ module "eks" {
   scaling_max_size        = 3
   scaling_min_size        = 2
   instance_types          = ["t3.small"]
-  key_pair                = "eks"
+  key_pair                = "eks.pem"
 }
 
 module "vpc" {
